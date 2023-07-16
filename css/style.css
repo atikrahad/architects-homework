@@ -19,7 +19,7 @@
 
 /*  nav-----------------------*/
 header{
-    padding: 20px 200px;
+    padding: 20px 150px;
     background-color: rgba(255, 144, 14, 0.10);
 }
 nav{
@@ -78,6 +78,50 @@ nav ul li a{
     width: 100%;
 }
 
+/*------------Main-------*/
+main{
+    max-width: 1050px;
+    margin: 40px auto;
+}
+.fiture{
+    display: flex;
+    align-items: center;
+}
+.fiture-content{
+    width: 50%;
+    padding-right: 50px;
+}.fiture-content h1{
+    font-size: 2.8rem;
+
+}
+.Quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.fiture-content p{
+    color: #727272;
+    line-height: 26px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.Features{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.fiture-pic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin: 50px;
+    width: 50%;
+}
+.fiture-pic img{
+    width: 100%;
+}
+
+
+
 /*-============ MOBILE VIEW responsible--------------*/
 @media screen and (max-width: 576px) {
     header{
@@ -86,6 +130,15 @@ nav ul li a{
     nav{
         flex-direction: column;
         gap: 10px;
+    }
+    .fiture{
+        flex-direction: column;
+    }
+    .fiture-content, .fiture-pic{
+        width: 85%;
+    }
+    .fiture-content{
+        padding: 5px;
     }
 }
 
