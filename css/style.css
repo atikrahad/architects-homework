@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  nav-----------------------*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    list-style: none;
+    padding: 8px 12px;
+    border: 1px solid tomato;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* header Banner ------------------*/
+
