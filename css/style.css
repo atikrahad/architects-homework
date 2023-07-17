@@ -16,6 +16,13 @@
     border: none;
     margin: 10px 0;
 }
+.p-p{
+    color: #727272;
+    line-height: 26px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5px 0;
+}
 
 /*  nav-----------------------*/
 header{
@@ -66,14 +73,6 @@ nav ul li a{
     font-weight: 700;
 
 }
-.banner-content p{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #727272;
-    line-height: 26px;
-    margin:  5px 0;
-}
-
 .banner img{
     width: 100%;
 }
@@ -98,12 +97,6 @@ main{
     color: #727272;
     font-weight: 500;
 }
-.fiture-content p{
-    color: #727272;
-    line-height: 26px;
-    font-size: 1rem;
-    font-weight: 400;
-}
 .Features{
     color: #FF900E;
     font-weight: 700;
@@ -120,26 +113,93 @@ main{
     width: 100%;
 }
 
-
+/* feauture css section */
+.feauture-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    
+}
+.feauture-content{
+    width: 50%;
+}
+.feauture-h1{
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.8rem;
+    padding-left: 20px;
+    border-left: 3px solid #FF900E;
+}
+.content-container div{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin: 10px 0;
+    padding: 10px 20px 5px 20px;
+}
+.content-container h1{
+   color: #131313;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+.feauture-img{
+    width: 50%;
+}
+.feauture-img img{
+    width: 100%;
+}
+.expariense{
+    width: 342px;
+    height: 200px;
+    background-color: #FF900E;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 90px;
+    right: 70px;
+}
+.expariense h1{
+    color: #FFF;
+    font-size: 4rem;
+    margin: 0;
+}
+.expariense p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
 
 /*-============ MOBILE VIEW responsible--------------*/
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav, .fiture{
+    nav, .fiture, .feauture-container{
         flex-direction: column;
         gap: 10px;
     }
     .fiture-pic{
         grid-template-columns: repeat(1, 1fr);
     }
-    .fiture-content, .fiture-pic{
-        width: 85%;
+    .fiture-content,
+    .feauture-content,
+    .feauture-img,
+    .fiture-pic{
+        width: 90%;
+        margin: 0 auto;
     }
-    .fiture-content{
+    .fiture-content
+    {
         padding: 5px;
     }
+    .expariense{
+        right: 10px;
+    }
+   
 }
 
 /*-==============tablat view responsible=========*/
@@ -147,14 +207,23 @@ main{
     header{
         padding: 20px 50px;
     }
-    .fiture-content, .fiture-pic{
+    .fiture-content, .fiture-pic,
+    .feauture-content,
+    .feauture-img{
         width: 75%;
     }
     .fiture{
         flex-direction: column-reverse;
     }
-    nav{
+    nav,
+    .feauture-container
+    {
         flex-direction: column;
         gap: 20px;
+    }
+    .feauture-content,
+    .feauture-img{
+        width: 80%;
+        margin: 0 auto;
     }
 }
