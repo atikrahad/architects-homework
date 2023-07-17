@@ -85,6 +85,7 @@ main{
 .fiture{
     display: flex;
     align-items: center;
+    margin: 50px 0;
 }
 .fiture-content{
     width: 50%;
@@ -173,12 +174,43 @@ main{
     margin: 0;
 }
 
+/* facts section */
+
+.facts-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+}
+.facts-container div{
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 20px 0;
+
+}
+.facts h1{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.facts-container h1{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+}
 /*-============ MOBILE VIEW responsible--------------*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
     header{
         padding: 20px;
     }
-    nav, .fiture, .feauture-container{
+    nav, .fiture, .feauture-container,
+    .facts-container{
         flex-direction: column;
         gap: 10px;
     }
@@ -188,9 +220,13 @@ main{
     .fiture-content,
     .feauture-content,
     .feauture-img,
-    .fiture-pic{
+    .fiture-pic
+    .facts{
         width: 90%;
         margin: 0 auto;
+    }
+    .facts{
+        padding: 0 20px;
     }
     .fiture-content
     {
@@ -203,7 +239,7 @@ main{
 }
 
 /*-==============tablat view responsible=========*/
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 640px) and (max-width: 960px) {
     header{
         padding: 20px 50px;
     }
@@ -215,6 +251,15 @@ main{
     .fiture{
         flex-direction: column-reverse;
     }
+    .facts-container div{
+        width:auto;
+        padding: 50px;
+    }
+    .facts-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
     nav,
     .feauture-container
     {
@@ -222,7 +267,8 @@ main{
         gap: 20px;
     }
     .feauture-content,
-    .feauture-img{
+    .feauture-img,
+    .facts{
         width: 80%;
         margin: 0 auto;
     }
