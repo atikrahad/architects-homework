@@ -218,6 +218,20 @@ main{
     align-items: center;
  }
 
+ /* ==========Footer section */
+
+    footer{
+        max-width: 1050px;
+        background-color: #FFF4E7;
+        margin: 50px auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+    footer p{
+        color: #424242;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
 
 /*-============ MOBILE VIEW responsible--------------*/
 @media screen and (max-width: 640px) {
