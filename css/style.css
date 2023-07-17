@@ -204,13 +204,29 @@ main{
     font-weight: 600;
     color: #424242;
 }
+
+/* ==========Sponsors */
+
+.sponsors{
+    text-align: center;
+    padding: 40px 0;
+ }
+ .sponsors-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    align-items: center;
+ }
+
+
 /*-============ MOBILE VIEW responsible--------------*/
 @media screen and (max-width: 640px) {
     header{
         padding: 20px;
     }
     nav, .fiture, .feauture-container,
-    .facts-container{
+    .facts-container,
+    .sponsors-container{
         flex-direction: column;
         gap: 10px;
     }
@@ -238,6 +254,7 @@ main{
    
 }
 
+
 /*-==============tablat view responsible=========*/
 @media screen and (min-width: 640px) and (max-width: 960px) {
     header{
@@ -255,7 +272,8 @@ main{
         width:auto;
         padding: 50px;
     }
-    .facts-container{
+    .facts-container,
+    .sponsors-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
@@ -268,7 +286,8 @@ main{
     }
     .feauture-content,
     .feauture-img,
-    .facts{
+    .facts,
+    .sponsors{
         width: 80%;
         margin: 0 auto;
     }
